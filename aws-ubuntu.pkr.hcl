@@ -7,7 +7,7 @@ packer {
   }
 }
 
-source "amazon-ebs-demo" "ubuntu" {
+source "amazon-ebs" "ubuntu" {
   profile       = "default"
   ami_name      = join("-", [var.ami_name, uuidv4()])
   instance_type = "t2.micro"
